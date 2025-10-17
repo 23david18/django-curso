@@ -92,3 +92,10 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'pda23whitehat@gmail.com'
+EMAIL_HOST_PASSWORD= 'uzls mvyq kcid yoou '
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
