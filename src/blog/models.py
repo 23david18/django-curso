@@ -2,6 +2,7 @@ from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import User
 from django.urls import reverse
+from taggit.managers import TaggableManager
 
 class PublishManager(models.Manager):
     def get_queryset(self):
@@ -28,6 +29,7 @@ class Post(models.Model):
                               choices=Status.choices,
                               default=Status.DRAFT)
     
+    tags = TaggableManager()
     objects = models.Manager()
     published = PublishManager()
     
